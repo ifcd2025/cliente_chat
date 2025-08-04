@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cliente de chat</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+   <script src="chat.js" defer></script>
+</head>
+<body>
+    <header><h1 class="alert alert-info text-center">Cliente chat</h1></header>
+    <main>
+        <div class="w-50 m-auto">
+            <label for="autor" class="d-block">Autor</label>
+            <input type="text" id="autor" name="autor">
+            <label for="mensaje" class="d-block">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="80" rows="5"></textarea>
+            <input type="button" value="enviar" class="d-block btn btn-primary">
+        </div>
+        <div id="mensajes" class="w-50 m-auto">
+            <div class="mensaje alert alert-dark m-3">
+                <div class="autor fw-bold border-bottom border-2 border-black p-2">Pepe</div>
+                <div class="mensaje mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, quaerat.</div>
+            </div>
+            <div class="mensaje alert alert-dark m-3">
+                <div class="autor fw-bold">Eva</div>
+                <div class="mensaje">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae culpa unde fugiat facere saepe veniam modi amet ullam, asperiores consectetur!</div>
+            </div>
+            <div class="mensaje alert alert-dark m-3">
+                <div class="autor fw-bold">Sara</div>
+                <div class="mensaje">Lorem ipsum dolor sit amet.</div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
